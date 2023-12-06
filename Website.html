@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        body {
+            background: url('https://i.imgur.com/9lSA2Dl.jpg') center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden; /* Hide overflow for the information box */
+        }
+
+
+
+
+        .overlay {
+            position: absolute;
+            width: 50%; /* Adjusted the width of the information box */
+            height: 60%; /* Adjusted the height of the information box */
+            background: rgba(0, 0, 0, 0.75); /* Adjust the color and opacity of the rectangle */
+            z-index: -1; /* Place the rectangle behind everything */
+            border-radius: 15px; /* Added border-radius for rounded corners */
+        }
+
+        h1 { /*is actually the welcome message at the top*/
+            text-align: center;
+            font-size: 2em;
+            z-index: 2; /* Ensure the title is above the rectangle */
+        }
+
+        .welcome-message { /*is actually the bio*/
+            text-align: center;
+            font-size: 1.0em;
+            margin-bottom: 10px;
+            z-index: 2; /* Ensure the welcome message is above the rectangle */
+        }
+
+        .bio { /*is actually "my socials"*/
+            width: 80%;
+            max-width: 600px;
+            font-size: 1.5em;
+            text-align: center;
+            margin-bottom: 20px;
+            z-index: 2; /* Ensure the bio field is above the rectangle */
+        }
+
+        .social-link {
+            position: relative;
+            margin-bottom: 20px; /* Increased the margin for better spacing */
+            width: 200px; /* Reduced width */
+            height: 80px; /* Reduced height */
+            text-align: center;
+            line-height: 80px; /* Set line-height equal to height */
+            border-radius: 15px; /* Reduced border-radius */
+            font-size: 1.5em;
+            cursor: pointer;
+            text-decoration: none; /* Remove the underline */
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: #ffffff; /* White text color */
+            text-shadow: 1px 1px 2px black; /* Black contour around the text */
+            z-index: 2; /* Ensure the social boxes are above the rectangle */
+        }
+
+            .social-link:hover {
+                transform: scale(1.05); /* Enlarging effect on hover */
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect on hover */
+            }
+
+            .social-link.twitter-box {
+                background-color: rgb(29, 161, 242); /* Initial Twitter blue color */
+            }
+
+                .social-link.twitter-box:hover {
+                    background-color: rgb(20, 113, 171); /* Twitter blue color on hover */
+                }
+
+            .social-link.steam-box {
+                background-color: rgb(23, 29, 37); /* Steam color */
+            }
+
+                .social-link.steam-box:hover {
+                    background-color: rgb(14, 17, 22); /* Steam color on hover */
+                }
+
+            .social-link.bluesky-box {
+                background-color: rgb(0, 133, 255); /* Bluesky blue color */
+            }
+
+                .social-link.bluesky-box:hover {
+                    background-color: rgb(0, 66, 126); /* Bluesky color on hover */
+                }
+
+            .social-link.furaffinity-box {
+                background-color: rgb(53, 59, 69); /* Furaffinity color */
+            }
+
+                .social-link.furaffinity-box:hover {
+                    background-color: rgb(37, 42, 49); /* Furaffinity color on hover */
+                }
+            .artist-credit {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 1em;
+            color: #ffffff;
+            z-index: 2; /* Ensure the credit is above the rectangle */
+                }
+
+            .artist-credit a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+                .artist-credit a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+    <title>RexTheFox's Social Links</title>
+</head>
+<body>
+    <div class="overlay"></div>
+    <h1>Welcome to my information website!</h1>
+    <p class="welcome-message">
+        Heya, I'm Rex, a 23 year old Norwegian &#127475;&#127476; fox :3
+
+        I just mostly play games or watch youtube/ Twitch. <br>
+        When it comes to interests, I do love any history from the viking age all the way to after World War 2.
+    </p>
+    <p class="bio">
+        My Socials:
+    </p>
+
+    <a href="https://twitter.com/RexTheFoxy" class="social-link twitter-box">Twitter</a>
+    <a href="https://steamcommunity.com/id/XrexGames/" class="social-link steam-box">Steam</a>
+    <a href="https://bsky.app/profile/rexthefox.no" class="social-link bluesky-box">Bluesky</a>
+    <a href="https://www.furaffinity.net/user/rexthefoxy/" class="social-link furaffinity-box">FurAffinity</a>
+    <div class="artist-credit">
+        Artwork by: <a href="https://www.furaffinity.net/user/blader999/" target="_blank">blader999</a>
+    </div>
+</body>
+</html>
